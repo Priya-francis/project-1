@@ -61,6 +61,7 @@
 }
 .home{
     text-decoration: none;
+    color: black;
 }
 .mainnav-center{
     display: flex;
@@ -441,20 +442,10 @@ margin-bottom: 30px;
 }
 
 @media(max-width:1200px){
-    .navbar{
-    width: 100%;
-    height: 100%;
-    margin: 0 auto;
-    background-color: black;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
-    font-size: 14px;
-    text-align: center;
-    
+   
+
+    .free-shipping{
+        display: none;
     }
     
     .phone{
@@ -672,6 +663,14 @@ margin-bottom: 30px;
  .grid-div{
     width: 100%;
  }
+ .navbar{
+    justify-content: space-around;
+ }
+ /* .grid-div{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 10px;
+ } */
 }
 
 @media(max-width:600px){
@@ -683,7 +682,7 @@ margin-bottom: 30px;
         .logo-img{
             
             justify-content: flex-start;
-            transform: translateX(-100%);
+            transform: translateX(-70%);
         }
         .maindiv-desc{
             color: white;
@@ -740,7 +739,7 @@ margin-bottom: 30px;
             margin-top: 20px;
         }
         .dress{
-            font-size: 10px;
+            font-size: 8px;
             font-weight: 700;
         }
         .star,.add-flex,.add-icons,.addcart-flex{
