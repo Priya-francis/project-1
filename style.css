@@ -1,0 +1,934 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+}
+
+.navbar{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px; 
+    padding-bottom: 10px;
+    font-size: 16px;
+    
+    
+}
+.mail{
+    display: flex;
+    width: 25%;
+    align-items: center;
+    gap: 8px;
+}
+.free-shipping{
+    width: 25%;
+}
+.inr-flex{
+    display: flex;
+    align-items: center;
+}
+.nav-right{
+    width: 25%;
+    display: flex;
+    gap: 30px;
+    justify-content: end;
+
+}
+.main-navbar{
+    width: 100%;
+    height: 100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* background-color: aqua; */
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: white;
+    
+}
+.phone{
+    width: 10%;
+    display: flex;
+    gap: 4px;
+    
+}
+.home{
+    text-decoration: none;
+}
+.mainnav-center{
+    display: flex;
+    width: 60%;
+    gap: 35px;
+    align-items: center;
+    justify-content: center;
+
+}
+.home{
+    display: flex;
+}
+.mainnav-icons{
+    display: flex;
+    width: 15%;
+    gap: 15px;
+    justify-content: end;
+    font-size: 18px;
+}
+.main-div{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+.main-img{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    
+}
+.maindiv-desc{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    /* display: flex; */
+    /* flex-direction: column;
+    justify-content: center; */
+    text-align: center;
+    line-height: 80px;
+
+}
+.autumn{
+    font-size: 35px;
+    font-weight: 600;
+}
+.new-arrival{
+    font-size: 55px;
+    font-weight: 700;
+}
+.shop-now{
+    padding: 20px 70px;
+    background-color: rgb(87, 13, 13);
+    color: white;
+    border: none;
+    font-size: 16px;
+}
+.dresses-div{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    margin:50px auto;
+    gap: 8%;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 700;
+}
+.dress{
+   
+    height: 100%;    
+}
+.img-container1{
+    width: 90%;
+    height: 100%;
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.images{
+    position: relative;
+    width: 100%;
+    
+}
+.sale{
+    position: absolute;
+    bottom: 30px;
+    background-color: white;
+    padding: 15px 40px;
+    opacity: 0;
+    transition: 0.5s;
+
+}
+.images:hover .sale{
+    opacity: 1;
+    transform: translateX(-20px);
+
+}
+ .shopnow-btn{
+    padding: 20px 70px;
+    background-color: rgb(87, 13, 13);
+    color: white;
+    border: none;
+    font-size: 16px;
+    /* width: 20%; */
+    transition: .7s;
+    animation-name: button;
+    
+} 
+@keyframes button{
+    from{
+        transform: translateX(-10px);
+    }
+    to{
+        transform: translateX(0);
+    }
+    
+}
+ .button{
+    width: 90%;
+    height: 100%;
+    margin: 60px auto;
+    display: flex;
+    justify-content: center;
+} 
+
+.newcollection-flex{
+    display: flex;
+    width: 90%;
+    height: 100%;
+    margin: 100px auto;
+    justify-content: space-between;
+    /* position: relative; */
+}
+
+.sale-desc{
+    width: 35%;
+    line-height: 30px;
+    /* position: absolute; */
+
+    margin-top: 16%;
+    /* text-align: center; */
+}
+.n-collection{
+    letter-spacing: 5px;
+    margin: 10px 0;
+
+}
+.sale-upto{
+    margin: 15px 0;
+}
+.sale-para{
+    margin-bottom: 30px;
+    font-size: 14px;
+}
+.sale-image{
+    width: 90%;
+    margin: 0 auto;
+    height: 100%;
+}
+  /* .sale-img{
+    width: 90%;
+}   */
+
+.bestseller-flex{
+    display: flex;
+    justify-content: space-between;
+    /* width: 35%; */
+    margin: 40px 0;
+    width: 90%;
+    margin: 40px auto;
+}
+.best-seller{
+    width: 90%;
+    margin: 100px auto;
+    display: flex;
+    /* justify-content: space-between;
+    height: 100%;
+    gap: 40px; */
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 80px;
+
+}
+.viewall-flex{
+    /* width: 35%; */
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+    align-items: center;
+}
+.bestseller-img{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    position: relative;
+    
+    
+}
+.bestimg-1:hover .add-flex{
+    opacity: 1;
+}
+.bestimg-1:hover .addcart-flex{
+    opacity: 1;
+}
+.bestimg-1:hover .addicon-flex{
+    opacity: 1;
+}
+.bestimg-1{
+    width: 22%;
+    height: 100%;
+    text-align: center;
+    position: relative;
+    
+
+}
+.best-image{
+    width: 100%;
+    
+}
+.add-flex{
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+    font-size: 20px;
+    background-color: white;
+    border: none;
+    /* padding: ; */
+    margin: 10px 0;
+    position: absolute;
+    top: 20%;
+    right: 34%;
+    opacity: 0;
+    transition: 0.5s;
+
+}
+.addcart-flex{
+    display: flex;
+    gap:2px;
+    background-color: white;
+    border: 1px solid black;
+    padding: 5px;
+    width: 50%;
+    margin: 10px 0;
+    top: 35%;
+    right: 25%;
+    position: absolute;
+    opacity: 0;
+    border: none;
+    transition: 0.5s;
+}
+.addicon-flex{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    background-color: rgb(100, 92, 92);
+    color: white;
+    padding: 10px 0;
+    position: absolute;
+    bottom:20%;
+    width: 100%;
+    opacity: 0;
+    transition: 0.5s;
+}
+.reviews{
+    width: 80%;
+    margin: 0 auto;
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 100px;
+    line-height: 40px;
+}
+.review-name{
+    font-size: 16px;
+    margin-top: 20px;
+}
+.flex-container{
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.part1-flex{
+    width: 32%;
+    height: 100%;
+
+}
+.box1{
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+    padding:20% 5% ;
+    line-height: 25px;
+    text-align: center;
+    background-color: antiquewhite;
+    border: none;
+    margin: 30px auto;
+}
+.desc-align{
+    margin: 10px;
+    line-height: 30px;
+}
+.image2{
+    width: 100%;
+}
+.summer-desc{
+    margin: 20px 0;
+    width: 100%;
+}
+.big-image{
+    width: 100%;
+    height: 96%;
+}
+.part2-flex{
+    width: 32%;
+}
+.box2{
+    width: 100%;
+height: 100%;
+border: 1px solid black;
+padding:20% 5% ;
+line-height: 25px;
+text-align: center;
+background-color: antiquewhite;
+border: none;
+margin-bottom: 30px;
+} 
+.onsale-flex{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    height: 90%;
+    margin: 0 auto;
+}
+.para1{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.bags-coll{
+    margin-bottom: 50px;
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 80px;
+    /* width:90%; */
+}
+.brands-flex{
+    display: flex;
+    width: 90%;
+    height: 100%;
+    margin: 100px auto;
+    justify-content: space-between;
+}
+.brands:hover{
+    transform: scale(1.2);
+}
+.brands{
+    transition: 0.5s;
+}
+.final-img{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+.imgg1{
+    width: 16.6%;
+}
+.menu-ic{
+    font-size: 20px;
+    color: black;
+    display: none;
+}
+
+@media(max-width:1200px){
+    .navbar{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    font-size: 14px;
+    text-align: center;
+    
+    }
+    
+    .phone{
+        display: none;
+    }
+    .logo-img{
+        /* align-items: center; */
+        justify-content: flex-start;
+        transform: translateX(-120%);
+    }
+    .home{
+        display: none;
+    }
+    .mainnav-icons .fa-magnifying-glass{
+        display: none;
+        
+    }
+    .mainnav-icons{
+        justify-content: end;
+    }
+
+    .maindiv-desc{
+        color: white;
+        text-align: center;
+        line-height: 60px;
+        
+    }
+    .autumn{
+        font-size: 25px;
+        font-weight: 600;
+    }
+    .new-arrival{
+        font-size: 35px;
+        font-weight: 700;
+    }
+    .dress{
+        font-size: 12px;
+    }   
+    
+    .sale-img{
+        width: 100%;
+        margin: 0 auto;
+    } 
+
+    .img-container1{
+        width: 90%;
+        height: 100%;
+        margin: 30px auto;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    .newcollection-flex{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        height: 100%;
+        /* margin: 100px auto; */
+        justify-content: center;
+        /* position: relative; */
+        align-items: center;
+        margin-bottom: 50px;
+        /* width: 90%; */
+    }
+    .sale-desc{
+        width: 100%;
+        line-height: 20px;
+        text-align: center;
+        margin-bottom: 50px; 
+        margin-top: 5%;   
+    }
+    
+    .sale-image{
+        width: 90%;
+        height: 100%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .brands{
+        transition: 0.5s;
+        width: 80%;
+        height: 70%;
+        
+    }
+    .best-seller{
+        padding-bottom: 40px;
+        margin: 50px auto;
+    }
+    .newcollection-flex{
+        margin: 0px auto;
+    }
+
+    .grid{
+        width: 100%;
+        position: relative;
+    
+     }
+
+.nav-right{
+    width: 25%;
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.shopnow-btn1{
+   display: none;
+}
+.grid-div{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    width: 90%;
+}
+.grid-cart{
+    display: none;
+}
+.bags-coll{
+    padding-bottom: 30px;
+}
+.onsale-flex{
+    margin: 80px auto;
+}
+.sale-desc{
+    width: 100%;
+    line-height: 30px;
+    /* position: absolute; */
+
+    margin-top: 8%;
+}
+
+.bestimg-1{
+    width: 100%;
+}
+
+.bestseller-img{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    position: relative;
+    gap:30px;
+    
+    
+}
+.addcart-flex{
+    
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    gap: 5px;
+    
+}
+.add-flex{
+    
+    padding:10px ;
+    margin: 0;
+   
+}
+.addicon-flex{
+    
+    bottom:18%;
+    
+}  
+.grid{
+    width: 90%;
+}
+.flex-container{
+    width: 90%;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+.part1-flex,.part2-flex,.part2-flex{
+    width: 100%;
+    height: 100%;
+}
+.reviews{
+    margin-bottom: 50px;
+}
+.box1,.box2{
+    margin: 10px auto;
+}
+
+.grid-div{
+    width: 90%;
+    height: 100%;
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+ }
+ .gridimg{
+    width: 100%;
+    
+ }
+ .grid{
+    width: 100%;
+ }
+ .grid-div{
+    width: 100%;
+ }
+}
+
+@media(max-width:600px){
+  
+    .navbar{
+    
+      display: none;
+        }
+        .logo-img{
+            
+            justify-content: flex-start;
+            transform: translateX(-100%);
+        }
+        .maindiv-desc{
+            color: white;
+            text-align: center;
+            line-height: 30px;
+            
+        }
+        .autumn{
+            font-size: 20px;
+            
+        }
+        .new-arrival{
+            font-size: 25px;
+            font-weight: 800;
+            
+        }
+
+        .main-navbar{
+            width: 100%;
+            height: 100%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            /* background-color: aqua; */
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            background-color: white;
+            
+            
+        
+        }
+        .main-div{
+            position: static;
+        }
+        .maindiv-desc{
+            position: static;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            transform: translateX(-2%);
+            color: black;
+        }
+
+        .shop-now , .shopnow-btn{
+            padding: 10px 50px;
+            background-color: rgb(87, 13, 13);
+            color: white;
+            border: none;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+        .dress{
+            font-size: 10px;
+            font-weight: 700;
+        }
+        .star,.add-flex,.add-icons,.addcart-flex{
+         display: none;   
+        }
+        .align{
+            font-size: 13px;
+            font-weight: bold;
+        }
+        .final-img{
+            flex-wrap: wrap;
+        }
+        .para1{
+            font-size: 16px;
+           
+        }
+        .review1{
+            font-size: 18px;
+        }
+        .best-seller{
+            padding-bottom: 40px;
+            margin: 50px auto;
+        }
+        .newcollection-flex{
+            margin: 20px auto;
+            width: 100%;
+        }
+        .bags-coll{
+            padding-bottom: 30px;
+        }
+        .sale-upto{
+            font-size: 24px;
+        }
+        .brands-flex{
+            margin: 50px auto;
+        }
+        .button{
+            margin: 30px auto;
+        }
+        .onsale-flex{
+            margin: 80px auto;
+        }
+        
+}
+
+
+
+.products{
+    text-align: center;
+    transform: translateX(-3%);
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+}
+.sub{
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 10px;
+}
+.cards1{
+    position: relative;
+    width: 48%;
+    height: 100%;
+   
+}
+.cards1-flex{
+    width: 90%;
+    height: 100%;
+    margin: 60px auto;
+    display: flex;
+    justify-content: space-between;
+ }
+ .card-img1{
+    width: 100%;
+ }
+ .card1-position{
+        position: absolute;
+        top: 30%;
+        right: 15%;
+        text-align: center;
+ }
+ .img1{
+    width: 100%;
+ }
+ .shopnow-btn1{
+    padding: 10px 50px;
+    background-color: rgb(87, 13, 13);
+    color: white;
+    border: none;
+    font-size: 16px;
+    /* width: 20%; */
+    transition: .7s;
+    animation-name: button;
+    margin-top: 10px;
+ }
+ .card1-title1{
+    font-size: 22px;
+    font-weight: 700;
+ }
+ .card1-title{
+    font-size: 16px;
+    letter-spacing: 2px;
+ }
+ .mdivision-flex{
+    display: flex;
+    width: 90%;
+    height: 100%;
+    justify-content: space-between;
+    margin: 0 auto;
+ }
+ .filter-flex{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+ }
+ .mdivision-right{
+    display: flex;
+    gap: 10px;
+ }
+ .alpha-flex{
+    display: flex;
+    gap: 10px;
+ }
+ .proddiv-grid{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    row-gap: 20px;
+    column-gap: 50px;
+ }
+
+ .bestimg-grid{
+    width: 10%;
+    margin: 10px auto;
+   
+ }
+ .rating{
+    text-align: center;
+
+ }
+ .grid{
+    width: 30%;
+    position: relative;
+    margin: 20px 0;
+
+ }
+ .gridimg{
+    width: 100%;
+    
+ }
+ .grid-cart{
+    background-color: rgb(89, 87, 85);
+    color: white;
+    padding:10px 41%;
+    /* opacity: 0; */
+    position: absolute;
+    bottom: 15%;
+    font-size: 12px;
+    opacity: 0;
+    transition: 0.5s;
+    
+    
+ }
+ .grid-div{
+    width: 90%;
+    height: 100%;
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+ }
+ .add-icons1{
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    color: whblackite;
+    opacity: 0;
+    transition: 0.5s;
+    font-size: 20px;
+ }
+ .grid:hover .add-icons1{
+    opacity: 1;
+
+ }
+ .grid:hover .grid-cart{
+    opacity: 1;
+ }
+ 
+
+
